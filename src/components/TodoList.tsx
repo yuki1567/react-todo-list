@@ -10,10 +10,10 @@ export function TodoList() {
             <td>
               <div className="icons">
                 <button className="check-button">
-                  <span class="material-icons check-icon">check</span>
+                  <span className="material-icons check-icon">check</span>
                 </button>
                 <button className="delete-button">
-                  <span class="material-icons delete-icon">delete</span>
+                  <span className="material-icons delete-icon">delete</span>
                 </button>
               </div>
             </td>
