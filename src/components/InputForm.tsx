@@ -7,7 +7,10 @@ export function InputForm({ taskList, setTaskList }: InputFormProps) {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    setTaskList([...taskList, { id: taskList.length, text: inputText }]);
+    setTaskList([
+      ...taskList,
+      { id: taskList.length, text: inputText, completed: false },
+    ]);
 
     setInputText("");
   };
