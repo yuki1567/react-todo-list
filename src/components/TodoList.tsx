@@ -34,13 +34,13 @@ export function TodoList({ taskList, setTaskList }: InputFormProps) {
                       handleCompleted(task.id);
                     }}
                   >
-                    <span className="material-icons check-icon">check</span>
+                    <span className="material-icons icon">check</span>
                   </button>
                   <button
                     className="delete-button"
                     onClick={() => handleDelete(task.id)}
                   >
-                    <span className="material-icons delete-icon">delete</span>
+                    <span className="material-icons icon">delete</span>
                   </button>
                 </div>
               </td>

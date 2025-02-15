@@ -23,8 +23,8 @@ export function InputForm({ taskList, setTaskList }: InputFormProps) {
     <div className="input-form">
       <form onSubmit={handleSubmit}>
         <input type="text" onChange={handleChange} value={inputText} />
-        <button>
-          <span className="material-icons add-icon">add_circle</span>
+        <button className="add-button">
+          <span className="material-icons icon">add_circle</span>
         </button>
       </form>
     </div>

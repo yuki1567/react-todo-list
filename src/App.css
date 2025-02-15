@@ -20,6 +20,8 @@ header {
 
 button {
   border: none;
+  padding: 8px 8px;
+  border-radius: 3px;
 }
 
 .input-form {
@@ -41,13 +43,7 @@ form {
   border-radius: 3px;
 }
 
-.input-form button {
-  padding: 8px 8px;
-  background: rgb(243, 240, 84);
-  border-radius: 3px;
-}
-
-.add-icon {
+.icon {
   font-size: 15px;
   display: flex;
   align-items: center;
@@ -81,30 +77,16 @@ td {
   justify-content: end;
 }
 
+.add-button {
+  background: rgb(243, 240, 84);
+}
+
 .check-button {
   background: rgb(83, 164, 195);
-  padding: 8px 8px;
-  border-radius: 3px;
 }
 
 .delete-button {
   background: rgb(197, 70, 81);
-  padding: 8px 8px;
-  border-radius: 3px;
-}
-
-.check-icon {
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.delete-icon {
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .completed {
