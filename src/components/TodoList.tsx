@@ -1,19 +1,18 @@
-type InputFormProps = {
-  taskList: string[];
-  setTaskList: React.Dispatch<React.SetStateAction<string[]>>;
-};
+import { InputFormProps } from "../types";
 
 export function TodoList({ taskList, setTaskList }: InputFormProps) {
+  const handleDelete = () => {};
+
   return (
     <div className="todo-list">
       <table>
         <tbody>
           {taskList.map((task, index) => (
             <tr key={index}>
-              <td>{task}</td>
+              <td>{task.text}</td>
               <td>
                 <div className="icons">
-                  <button className="check-button">
+                  <button className="check-button" onClick={handleDelete}>
                     <span className="material-icons check-icon">check</span>
                   </button>
                   <button className="delete-button">

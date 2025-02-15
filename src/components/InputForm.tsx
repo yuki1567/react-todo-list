@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-
-type InputFormProps = {
-  taskList: string[];
-  setTaskList: React.Dispatch<React.SetStateAction<string[]>>;
-};
+import { InputFormProps } from "../types";
 
 export function InputForm({ taskList, setTaskList }: InputFormProps) {
   const [inputText, setInputText] = useState("");
@@ -11,7 +7,7 @@ export function InputForm({ taskList, setTaskList }: InputFormProps) {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    setTaskList([...taskList, inputText]);
+    setTaskList([...taskList, { id: taskList.length, text: inputText }]);
 
     setInputText("");
   };
