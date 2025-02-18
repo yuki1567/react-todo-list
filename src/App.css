@@ -14,8 +14,13 @@ body {
 
 header {
   text-align: center;
-  width: 80vw;
   margin: 100px auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button {
@@ -34,6 +39,7 @@ button {
 form {
   display: flex;
   align-items: stretch;
+  width: 450px;
 }
 
 .input-form input {
@@ -41,6 +47,7 @@ form {
   padding: 3px 8px;
   border: 1px solid rgb(218 220 222);
   border-radius: 3px;
+  flex-grow: 1;
 }
 
 .icon {
@@ -50,26 +57,9 @@ form {
   justify-content: center;
 }
 
-.todo-list {
+.todo-lists {
   width: 100vw;
   margin: 50px auto;
-}
-
-table {
-  margin: 0px auto;
-  background: white;
-  border: 1px solid rgb(218 220 222);
-  border-radius: 5px;
-  border-collapse: collapse;
-  width: 450px;
-}
-
-tr {
-  border-bottom: 1px solid rgb(218 220 222);
-}
-
-td {
-  padding: 0px 0px 0px 5px;
 }
 
 .icons {
@@ -78,18 +68,52 @@ td {
 }
 
 .add-button {
-  background: rgb(91, 176, 110);
-}
-
-.check-button {
   background: rgb(83, 164, 195);
-}
-
-.delete-button {
-  background: rgb(197, 70, 81);
 }
 
 .completed {
   text-decoration: line-through;
   opacity: 0.3;
+}
+
+.todo-list {
+  list-style: none;
+  width: 450px;
+}
+
+.todo-item {
+  background: white;
+  padding: 10px;
+  display: flex;
+  border-top: 1px solid rgb(218 220 222);
+  border-right: 1px solid rgb(218 220 222);
+  border-bottom: 1px solid rgb(218 220 222);
+  border-left: 3px solid rgb(67 130 196);
+  border-radius: 3px;
+  justify-content: space-between;
+  margin: 3px 0;
+}
+
+.todo-actions {
+  width: 140px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.todo-actions a {
+  font-size: 14px;
+  color: #0954ab;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.separator {
+  color: rgb(191 194 196);
+}
+
+.edit-input {
+  padding: 0px 3px;
+  border: solid rgb(218 220 222);
+  border-radius: 3px;
 }

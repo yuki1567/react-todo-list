@@ -1,9 +1,3 @@
 export function Title() {
-  return (
-    <div>
-      <header>
-        <h1>TodoList App</h1>
-      </header>
-    </div>
-  );
+  return <h1>TodoList App</h1>;
 }

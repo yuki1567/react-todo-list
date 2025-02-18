@@ -9,7 +9,7 @@ export function InputForm({ taskList, setTaskList }: InputFormProps) {
 
     setTaskList([
       ...taskList,
-      { id: taskList.length, text: inputText, completed: false },
+      { id: taskList.length, text: inputText, completed: false, editing: false },
     ]);
 
     setInputText("");
@@ -24,7 +24,7 @@ export function InputForm({ taskList, setTaskList }: InputFormProps) {
       <form onSubmit={handleSubmit}>
         <input type="text" onChange={handleChange} value={inputText} />
         <button className="add-button">
-          <span className="material-icons icon">add_circle</span>
+          <span className="material-icons icon">add</span>
         </button>
       </form>
     </div>
